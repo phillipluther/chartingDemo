@@ -34,7 +34,7 @@ ZE.Structs.Models.ClinicalTrialSearch = Backbone.Model.extend({
     },
 
     // point our model at the clinical trial service (hard-coded for demo purposes)
-    //url : '/zephyrDemo/services/clinicalTrial/',
+    //url : '/zephyrDemo/services/clinicalTrial.php',
     url : '/services/clinicalTrial/',
 
 
@@ -188,6 +188,8 @@ ZE.Structs.Models.ClinicalTrialSearch = Backbone.Model.extend({
             self     = this,
             formData = this.get('formData'),
 
+            // the timer ran out on me before I could get my pagination scheme implemented; alas,
+            // the limit of 20 calls is stuck in place by EOD by the deadline ... 
             paginationConfig = {
                 stubbed : true
             };
