@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
+    <head>
+        <!-- needed for push-state URLs/routing -->
+        <!-- base href="http://www.phillipluther.com/zephyrDemo/" -->
+        <base href="http://zephyr.local/">
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Zephyr Coding Exercise</title>
+        <meta name="description" content="N/a ... ">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize_min.css">
+        <link rel="stylesheet" href="css/global.css">
+    </head>
+
+    <body class="page-body">
+
+        <!--    *
+                * I didn't do any kind of build process for minifying or aggregating these scripts,
+                * as I thought that would be counter-productive to reviewing this stuff. It's a
+                * less than ideal way to serve up assets, but considering the spirit of the
+                * assignment I'm just pulling these in up-front and as-is.
+                *
+                * -->
+
+        <!-- load our libs -->
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="scripts/lib/underscore_backbone_min.js"></script>
+        <script src="scripts/lib/highcharts.js"></script>
+
+        <!-- created scripts -->
+        <script src="scripts/core.js"></script>
+        <script src="scripts/content.js"></script>
+
+        <script src="scripts/structs/models/page.mod.js"></script>
+        <script src="scripts/structs/views/page.view.js"></script>
+
+        <script src="scripts/structs/models/clinicalTrialSearch.mod.js"></script>
+        <script src="scripts/structs/views/clinicalTrialSearch.view.js"></script>
+
+        <script src="scripts/structs/models/barChart.mod.js"></script>
+        <script src="scripts/structs/views/barChart.view.js"></script>
+
+        <script src="scripts/structs/views/table.view.js"></script>
+
+        <script src="scripts/router.js"></script>
+
+    </body>
+</html>

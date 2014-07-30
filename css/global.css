@@ -1,0 +1,177 @@
+/*
+ * GoG ... good ol' global.css. I didn't bring in any dynamic CSS libraries or use bootstrap
+ * because it didn't seem that necessary for the scope of this exercise. I'm just styling the
+ * bare minimum to not have things look completely horrendous and add a touch of flare.
+ */
+
+html {
+    background: #e9e9e9;
+}
+
+.page-body  {
+    width: 960px;
+    margin: 0 auto;
+}
+
+.chart-options-wrapper {
+    position: relative;
+}
+
+.loading::after {
+
+    -webkit-animation: loading 3s infinite;
+       -moz-animation: loading 3s infinite;
+        -ms-animation: loading 3s infinite;
+            animation: loading 3s infinite;
+
+    display: block;
+    content: 'Loading ... ';
+    font-size: 2em;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    line-height: 110px;
+    text-align: center;
+    background: rgba(255, 255, 255, .8);
+    z-index: 100;
+}
+
+@-webkit-keyframes loading {
+     0%  { color: #fff; }
+     50% { color: #666; }
+    100% { color: #fff; }
+}
+
+@-moz-keyframes loading {
+     0%  { color: #fff; }
+     50% { color: #666; }
+    100% { color: #fff; }
+}
+
+@-ms-keyframes loading {
+     0%  { color: #fff; }
+     50% { color: #666; }
+    100% { color: #fff; }
+}
+
+@keyframes loading {
+     0%  { color: #fff; }
+     50% { color: #666; }
+    100% { color: #fff; }
+}
+
+.search-tag {
+    text-decoration: none;
+    position: relative;
+    display: inline-block;
+    padding: 5px 15px 5px 35px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #f9f9f9;
+    margin: 20px 10px 0 0;
+}
+
+.search-tag::after {
+    content : 'x';
+    display: block;
+    font-weight: bold;
+    width: 17px;
+    line-height: 17px;
+    text-align: center;
+    border: 1px solid #d9d9d9;
+    border-radius: 3px;
+    background: #fff;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.text-field {
+    padding: 0 10px;
+    font-size: 1.4em;
+    width: 500px;
+    margin-right: 10px;
+    border: 1px solid #bbb;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, .15);
+    line-height: 44px;
+}
+
+.text-field:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.submit-field {
+    line-height: 42px;
+    padding: 0 25px;
+}
+
+.chart-options-wrapper,
+.data-table,
+.chart-wrapper {
+    margin: 30px 0;
+    border: 1px solid #ccc;
+    padding: 30px;
+    background: #fff;
+}
+
+.table-cell {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    font-size: .8em;
+}
+
+.table-header {
+    background: -webkit-linear-gradient(top, #fff, #f0f0f0);
+    background:    -moz-linear-gradient(top, #fff, #f0f0f0);
+    background:     -ms-linear-gradient(top, #fff, #f0f0f0);
+    background:         linear-gradient(top, #fff, #f0f0f0);
+    padding: 15px 10px;
+}
+
+.sortable {
+    cursor: pointer;
+}
+
+.sorted {
+    text-decoration: underline;
+}
+
+.descending,
+.ascending {
+    padding-right: 30px;
+    position: relative;
+}
+
+.ascending::after,
+.descending::after {
+    display: block;
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 27px;
+    width: 8px;
+    height: 8px;
+
+    background: -webkit-linear-gradient(top left, transparent 0%, transparent 50%, #999 50%, #999 100%);
+    background: -webkit-linear-gradient(top left, transparent 0%, transparent 50%, #999 50%, #999 100%);
+    background:    -moz-linear-gradient(top left, transparent 0%, transparent 50%, #999 50%, #999 100%);
+    background:     -ms-linear-gradient(top left, transparent 0%, transparent 50%, #999 50%, #999 100%);
+    background:         linear-gradient(top left, transparent 0%, transparent 50%, #999 50%, #999 100%);
+}
+
+.ascending::after {
+    -webkit-transform: rotate(45deg);
+       -moz-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+}
+
+.descending::after {
+    -webkit-transform: rotate(-135deg);
+       -moz-transform: rotate(-135deg);
+        -ms-transform: rotate(-135deg);
+            transform: rotate(-135deg);
+}
